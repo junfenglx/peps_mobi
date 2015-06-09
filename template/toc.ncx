@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN" "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd">
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="en-US">
+<head>
+<meta name="dtb:uid" content="{{ uid }}"/>
+<meta name="dtb:depth" content="2"/>
+<meta name="dtb:totalPageCount" content="0"/>
+<meta name="dtb:maxPageNumber" content="0"/>
+</head>
+<docTitle><text>{{ book_name }}</text></docTitle>
+<docAuthor><text>{{ book_author }}</text></docAuthor>
+<navMap>
+                <navPoint class="toc" id="toc" playOrder="1">
+                        <navLabel>
+                                <text>Table of Contents</text>
+                        </navLabel>
+                        <content src="toc.html"/>
+                </navPoint>
+                {% for i, t in enumerate(titles, start=2) %}
+                <navPoint class="chapter" id="chapter-{{ t["id"] }}" playOrder="{{ i }}">
+                  <navLabel>
+                        <text>{{ t["text"] }}</text>
+                  </navLabel>
+                  <content src="content.html#{{ t["id"] }}"/>
+                </navPoint>
+                {% end %}
+        </navMap>
+</ncx>

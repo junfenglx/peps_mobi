@@ -1,0 +1,2660 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN" "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd">
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="en-US">
+<head>
+<meta name="dtb:uid" content="f260d520-0ea8-11e5-8ae6-8ca982b673fa"/>
+<meta name="dtb:depth" content="2"/>
+<meta name="dtb:totalPageCount" content="0"/>
+<meta name="dtb:maxPageNumber" content="0"/>
+</head>
+<docTitle><text>Python Enhancement Proposals</text></docTitle>
+<docAuthor><text>junfeng</text></docAuthor>
+<navMap>
+                <navPoint class="toc" id="toc" playOrder="1">
+                        <navLabel>
+                                <text>Table of Contents</text>
+                        </navLabel>
+                        <content src="toc.html"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0001" playOrder="2">
+                  <navLabel>
+                        <text>pep-0001 PEP Purpose and Guidelines</text>
+                  </navLabel>
+                  <content src="content.html#pep-0001"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0002" playOrder="3">
+                  <navLabel>
+                        <text>pep-0002 Procedure for Adding New Modules</text>
+                  </navLabel>
+                  <content src="content.html#pep-0002"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0003" playOrder="4">
+                  <navLabel>
+                        <text>pep-0003 Guidelines for Handling Bug Reports</text>
+                  </navLabel>
+                  <content src="content.html#pep-0003"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0004" playOrder="5">
+                  <navLabel>
+                        <text>pep-0004 Deprecation of Standard Modules</text>
+                  </navLabel>
+                  <content src="content.html#pep-0004"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0005" playOrder="6">
+                  <navLabel>
+                        <text>pep-0005 Guidelines for Language Evolution</text>
+                  </navLabel>
+                  <content src="content.html#pep-0005"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0006" playOrder="7">
+                  <navLabel>
+                        <text>pep-0006 Bug Fix Releases</text>
+                  </navLabel>
+                  <content src="content.html#pep-0006"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0007" playOrder="8">
+                  <navLabel>
+                        <text>pep-0007 Style Guide for C Code</text>
+                  </navLabel>
+                  <content src="content.html#pep-0007"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0008" playOrder="9">
+                  <navLabel>
+                        <text>pep-0008 Style Guide for Python Code</text>
+                  </navLabel>
+                  <content src="content.html#pep-0008"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0009" playOrder="10">
+                  <navLabel>
+                        <text>pep-0009 Sample Plaintext PEP Template</text>
+                  </navLabel>
+                  <content src="content.html#pep-0009"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0010" playOrder="11">
+                  <navLabel>
+                        <text>pep-0010 Voting Guidelines</text>
+                  </navLabel>
+                  <content src="content.html#pep-0010"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0011" playOrder="12">
+                  <navLabel>
+                        <text>pep-0011 Removing support for little used platforms</text>
+                  </navLabel>
+                  <content src="content.html#pep-0011"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0012" playOrder="13">
+                  <navLabel>
+                        <text>pep-0012 Sample reStructuredText PEP Template</text>
+                  </navLabel>
+                  <content src="content.html#pep-0012"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0020" playOrder="14">
+                  <navLabel>
+                        <text>pep-0020 The Zen of Python</text>
+                  </navLabel>
+                  <content src="content.html#pep-0020"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0042" playOrder="15">
+                  <navLabel>
+                        <text>pep-0042 Feature Requests</text>
+                  </navLabel>
+                  <content src="content.html#pep-0042"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0100" playOrder="16">
+                  <navLabel>
+                        <text>pep-0100 Python Unicode Integration</text>
+                  </navLabel>
+                  <content src="content.html#pep-0100"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0101" playOrder="17">
+                  <navLabel>
+                        <text>pep-0101 Doing Python Releases 101</text>
+                  </navLabel>
+                  <content src="content.html#pep-0101"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0102" playOrder="18">
+                  <navLabel>
+                        <text>pep-0102 Doing Python Micro Releases</text>
+                  </navLabel>
+                  <content src="content.html#pep-0102"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0160" playOrder="19">
+                  <navLabel>
+                        <text>pep-0160 Python 1.6 Release Schedule</text>
+                  </navLabel>
+                  <content src="content.html#pep-0160"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0200" playOrder="20">
+                  <navLabel>
+                        <text>pep-0200 Python 2.0 Release Schedule</text>
+                  </navLabel>
+                  <content src="content.html#pep-0200"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0201" playOrder="21">
+                  <navLabel>
+                        <text>pep-0201 Lockstep Iteration</text>
+                  </navLabel>
+                  <content src="content.html#pep-0201"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0202" playOrder="22">
+                  <navLabel>
+                        <text>pep-0202 List Comprehensions</text>
+                  </navLabel>
+                  <content src="content.html#pep-0202"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0203" playOrder="23">
+                  <navLabel>
+                        <text>pep-0203 Augmented Assignments</text>
+                  </navLabel>
+                  <content src="content.html#pep-0203"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0204" playOrder="24">
+                  <navLabel>
+                        <text>pep-0204 Range Literals</text>
+                  </navLabel>
+                  <content src="content.html#pep-0204"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0205" playOrder="25">
+                  <navLabel>
+                        <text>pep-0205 Weak References</text>
+                  </navLabel>
+                  <content src="content.html#pep-0205"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0206" playOrder="26">
+                  <navLabel>
+                        <text>pep-0206 Python Advanced Library</text>
+                  </navLabel>
+                  <content src="content.html#pep-0206"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0207" playOrder="27">
+                  <navLabel>
+                        <text>pep-0207 Rich Comparisons</text>
+                  </navLabel>
+                  <content src="content.html#pep-0207"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0208" playOrder="28">
+                  <navLabel>
+                        <text>pep-0208 Reworking the Coercion Model</text>
+                  </navLabel>
+                  <content src="content.html#pep-0208"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0209" playOrder="29">
+                  <navLabel>
+                        <text>pep-0209 Multi-dimensional Arrays</text>
+                  </navLabel>
+                  <content src="content.html#pep-0209"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0210" playOrder="30">
+                  <navLabel>
+                        <text>pep-0210 Decoupling the Interpreter Loop</text>
+                  </navLabel>
+                  <content src="content.html#pep-0210"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0211" playOrder="31">
+                  <navLabel>
+                        <text>pep-0211 Adding A New Outer Product Operator</text>
+                  </navLabel>
+                  <content src="content.html#pep-0211"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0212" playOrder="32">
+                  <navLabel>
+                        <text>pep-0212 Loop Counter Iteration</text>
+                  </navLabel>
+                  <content src="content.html#pep-0212"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0213" playOrder="33">
+                  <navLabel>
+                        <text>pep-0213 Attribute Access Handlers</text>
+                  </navLabel>
+                  <content src="content.html#pep-0213"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0214" playOrder="34">
+                  <navLabel>
+                        <text>pep-0214 Extended Print Statement</text>
+                  </navLabel>
+                  <content src="content.html#pep-0214"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0215" playOrder="35">
+                  <navLabel>
+                        <text>pep-0215 String Interpolation</text>
+                  </navLabel>
+                  <content src="content.html#pep-0215"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0216" playOrder="36">
+                  <navLabel>
+                        <text>pep-0216 Docstring Format</text>
+                  </navLabel>
+                  <content src="content.html#pep-0216"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0217" playOrder="37">
+                  <navLabel>
+                        <text>pep-0217 Display Hook for Interactive Use</text>
+                  </navLabel>
+                  <content src="content.html#pep-0217"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0218" playOrder="38">
+                  <navLabel>
+                        <text>pep-0218 Adding a Built-In Set Object Type</text>
+                  </navLabel>
+                  <content src="content.html#pep-0218"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0219" playOrder="39">
+                  <navLabel>
+                        <text>pep-0219 Stackless Python</text>
+                  </navLabel>
+                  <content src="content.html#pep-0219"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0220" playOrder="40">
+                  <navLabel>
+                        <text>pep-0220 Coroutines, Generators, Continuations</text>
+                  </navLabel>
+                  <content src="content.html#pep-0220"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0221" playOrder="41">
+                  <navLabel>
+                        <text>pep-0221 Import As</text>
+                  </navLabel>
+                  <content src="content.html#pep-0221"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0222" playOrder="42">
+                  <navLabel>
+                        <text>pep-0222 Web Library Enhancements</text>
+                  </navLabel>
+                  <content src="content.html#pep-0222"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0223" playOrder="43">
+                  <navLabel>
+                        <text>pep-0223 Change the Meaning of \x Escapes</text>
+                  </navLabel>
+                  <content src="content.html#pep-0223"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0224" playOrder="44">
+                  <navLabel>
+                        <text>pep-0224 Attribute Docstrings</text>
+                  </navLabel>
+                  <content src="content.html#pep-0224"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0225" playOrder="45">
+                  <navLabel>
+                        <text>pep-0225 Elementwise/Objectwise Operators</text>
+                  </navLabel>
+                  <content src="content.html#pep-0225"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0226" playOrder="46">
+                  <navLabel>
+                        <text>pep-0226 Python 2.1 Release Schedule</text>
+                  </navLabel>
+                  <content src="content.html#pep-0226"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0227" playOrder="47">
+                  <navLabel>
+                        <text>pep-0227 Statically Nested Scopes</text>
+                  </navLabel>
+                  <content src="content.html#pep-0227"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0228" playOrder="48">
+                  <navLabel>
+                        <text>pep-0228 Reworking Python&#39;s Numeric Model</text>
+                  </navLabel>
+                  <content src="content.html#pep-0228"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0229" playOrder="49">
+                  <navLabel>
+                        <text>pep-0229 Using Distutils to Build Python</text>
+                  </navLabel>
+                  <content src="content.html#pep-0229"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0230" playOrder="50">
+                  <navLabel>
+                        <text>pep-0230 Warning Framework</text>
+                  </navLabel>
+                  <content src="content.html#pep-0230"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0231" playOrder="51">
+                  <navLabel>
+                        <text>pep-0231 __findattr__()</text>
+                  </navLabel>
+                  <content src="content.html#pep-0231"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0232" playOrder="52">
+                  <navLabel>
+                        <text>pep-0232 Function Attributes</text>
+                  </navLabel>
+                  <content src="content.html#pep-0232"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0233" playOrder="53">
+                  <navLabel>
+                        <text>pep-0233 Python Online Help</text>
+                  </navLabel>
+                  <content src="content.html#pep-0233"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0234" playOrder="54">
+                  <navLabel>
+                        <text>pep-0234 Iterators</text>
+                  </navLabel>
+                  <content src="content.html#pep-0234"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0235" playOrder="55">
+                  <navLabel>
+                        <text>pep-0235 Import on Case-Insensitive Platforms</text>
+                  </navLabel>
+                  <content src="content.html#pep-0235"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0236" playOrder="56">
+                  <navLabel>
+                        <text>pep-0236 Back to the __future__</text>
+                  </navLabel>
+                  <content src="content.html#pep-0236"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0237" playOrder="57">
+                  <navLabel>
+                        <text>pep-0237 Unifying Long Integers and Integers</text>
+                  </navLabel>
+                  <content src="content.html#pep-0237"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0238" playOrder="58">
+                  <navLabel>
+                        <text>pep-0238 Changing the Division Operator</text>
+                  </navLabel>
+                  <content src="content.html#pep-0238"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0239" playOrder="59">
+                  <navLabel>
+                        <text>pep-0239 Adding a Rational Type to Python</text>
+                  </navLabel>
+                  <content src="content.html#pep-0239"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0240" playOrder="60">
+                  <navLabel>
+                        <text>pep-0240 Adding a Rational Literal to Python</text>
+                  </navLabel>
+                  <content src="content.html#pep-0240"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0241" playOrder="61">
+                  <navLabel>
+                        <text>pep-0241 Metadata for Python Software Packages</text>
+                  </navLabel>
+                  <content src="content.html#pep-0241"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0242" playOrder="62">
+                  <navLabel>
+                        <text>pep-0242 Numeric Kinds</text>
+                  </navLabel>
+                  <content src="content.html#pep-0242"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0243" playOrder="63">
+                  <navLabel>
+                        <text>pep-0243 Module Repository Upload Mechanism</text>
+                  </navLabel>
+                  <content src="content.html#pep-0243"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0244" playOrder="64">
+                  <navLabel>
+                        <text>pep-0244 The `directive&#39; statement</text>
+                  </navLabel>
+                  <content src="content.html#pep-0244"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0245" playOrder="65">
+                  <navLabel>
+                        <text>pep-0245 Python Interface Syntax</text>
+                  </navLabel>
+                  <content src="content.html#pep-0245"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0246" playOrder="66">
+                  <navLabel>
+                        <text>pep-0246 Object Adaptation</text>
+                  </navLabel>
+                  <content src="content.html#pep-0246"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0247" playOrder="67">
+                  <navLabel>
+                        <text>pep-0247 API for Cryptographic Hash Functions</text>
+                  </navLabel>
+                  <content src="content.html#pep-0247"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0248" playOrder="68">
+                  <navLabel>
+                        <text>pep-0248 Python Database API Specification v1.0</text>
+                  </navLabel>
+                  <content src="content.html#pep-0248"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0249" playOrder="69">
+                  <navLabel>
+                        <text>pep-0249 Python Database API Specification v2.0</text>
+                  </navLabel>
+                  <content src="content.html#pep-0249"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0250" playOrder="70">
+                  <navLabel>
+                        <text>pep-0250 Using site-packages on Windows</text>
+                  </navLabel>
+                  <content src="content.html#pep-0250"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0251" playOrder="71">
+                  <navLabel>
+                        <text>pep-0251 Python 2.2 Release Schedule</text>
+                  </navLabel>
+                  <content src="content.html#pep-0251"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0252" playOrder="72">
+                  <navLabel>
+                        <text>pep-0252 Making Types Look More Like Classes</text>
+                  </navLabel>
+                  <content src="content.html#pep-0252"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0253" playOrder="73">
+                  <navLabel>
+                        <text>pep-0253 Subtyping Built-in Types</text>
+                  </navLabel>
+                  <content src="content.html#pep-0253"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0254" playOrder="74">
+                  <navLabel>
+                        <text>pep-0254 Making Classes Look More Like Types</text>
+                  </navLabel>
+                  <content src="content.html#pep-0254"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0255" playOrder="75">
+                  <navLabel>
+                        <text>pep-0255 Simple Generators</text>
+                  </navLabel>
+                  <content src="content.html#pep-0255"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0256" playOrder="76">
+                  <navLabel>
+                        <text>pep-0256 Docstring Processing System Framework</text>
+                  </navLabel>
+                  <content src="content.html#pep-0256"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0257" playOrder="77">
+                  <navLabel>
+                        <text>pep-0257 Docstring Conventions</text>
+                  </navLabel>
+                  <content src="content.html#pep-0257"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0258" playOrder="78">
+                  <navLabel>
+                        <text>pep-0258 Docutils Design Specification</text>
+                  </navLabel>
+                  <content src="content.html#pep-0258"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0259" playOrder="79">
+                  <navLabel>
+                        <text>pep-0259 Omit printing newline after newline</text>
+                  </navLabel>
+                  <content src="content.html#pep-0259"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0260" playOrder="80">
+                  <navLabel>
+                        <text>pep-0260 Simplify xrange()</text>
+                  </navLabel>
+                  <content src="content.html#pep-0260"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0261" playOrder="81">
+                  <navLabel>
+                        <text>pep-0261 Support for &quot;wide&quot; Unicode characters</text>
+                  </navLabel>
+                  <content src="content.html#pep-0261"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0262" playOrder="82">
+                  <navLabel>
+                        <text>pep-0262 A Database of Installed Python Packages</text>
+                  </navLabel>
+                  <content src="content.html#pep-0262"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0263" playOrder="83">
+                  <navLabel>
+                        <text>pep-0263 Defining Python Source Code Encodings</text>
+                  </navLabel>
+                  <content src="content.html#pep-0263"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0264" playOrder="84">
+                  <navLabel>
+                        <text>pep-0264 Future statements in simulated shells</text>
+                  </navLabel>
+                  <content src="content.html#pep-0264"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0265" playOrder="85">
+                  <navLabel>
+                        <text>pep-0265 Sorting Dictionaries by Value</text>
+                  </navLabel>
+                  <content src="content.html#pep-0265"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0266" playOrder="86">
+                  <navLabel>
+                        <text>pep-0266 Optimizing Global Variable/Attribute Access</text>
+                  </navLabel>
+                  <content src="content.html#pep-0266"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0267" playOrder="87">
+                  <navLabel>
+                        <text>pep-0267 Optimized Access to Module Namespaces</text>
+                  </navLabel>
+                  <content src="content.html#pep-0267"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0268" playOrder="88">
+                  <navLabel>
+                        <text>pep-0268 Extended HTTP functionality and WebDAV</text>
+                  </navLabel>
+                  <content src="content.html#pep-0268"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0269" playOrder="89">
+                  <navLabel>
+                        <text>pep-0269 Pgen Module for Python</text>
+                  </navLabel>
+                  <content src="content.html#pep-0269"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0270" playOrder="90">
+                  <navLabel>
+                        <text>pep-0270 uniq method for list objects</text>
+                  </navLabel>
+                  <content src="content.html#pep-0270"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0271" playOrder="91">
+                  <navLabel>
+                        <text>pep-0271 Prefixing sys.path by command line option</text>
+                  </navLabel>
+                  <content src="content.html#pep-0271"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0272" playOrder="92">
+                  <navLabel>
+                        <text>pep-0272 API for Block Encryption Algorithms v1.0</text>
+                  </navLabel>
+                  <content src="content.html#pep-0272"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0273" playOrder="93">
+                  <navLabel>
+                        <text>pep-0273 Import Modules from Zip Archives</text>
+                  </navLabel>
+                  <content src="content.html#pep-0273"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0274" playOrder="94">
+                  <navLabel>
+                        <text>pep-0274 Dict Comprehensions</text>
+                  </navLabel>
+                  <content src="content.html#pep-0274"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0275" playOrder="95">
+                  <navLabel>
+                        <text>pep-0275 Switching on Multiple Values</text>
+                  </navLabel>
+                  <content src="content.html#pep-0275"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0276" playOrder="96">
+                  <navLabel>
+                        <text>pep-0276 Simple Iterator for ints</text>
+                  </navLabel>
+                  <content src="content.html#pep-0276"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0277" playOrder="97">
+                  <navLabel>
+                        <text>pep-0277 Unicode file name support for Windows NT</text>
+                  </navLabel>
+                  <content src="content.html#pep-0277"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0278" playOrder="98">
+                  <navLabel>
+                        <text>pep-0278 Universal Newline Support</text>
+                  </navLabel>
+                  <content src="content.html#pep-0278"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0279" playOrder="99">
+                  <navLabel>
+                        <text>pep-0279 The enumerate() built-in function</text>
+                  </navLabel>
+                  <content src="content.html#pep-0279"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0280" playOrder="100">
+                  <navLabel>
+                        <text>pep-0280 Optimizing access to globals</text>
+                  </navLabel>
+                  <content src="content.html#pep-0280"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0281" playOrder="101">
+                  <navLabel>
+                        <text>pep-0281 Loop Counter Iteration with range and xrange</text>
+                  </navLabel>
+                  <content src="content.html#pep-0281"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0282" playOrder="102">
+                  <navLabel>
+                        <text>pep-0282 A Logging System</text>
+                  </navLabel>
+                  <content src="content.html#pep-0282"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0283" playOrder="103">
+                  <navLabel>
+                        <text>pep-0283 Python 2.3 Release Schedule</text>
+                  </navLabel>
+                  <content src="content.html#pep-0283"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0284" playOrder="104">
+                  <navLabel>
+                        <text>pep-0284 Integer for-loops</text>
+                  </navLabel>
+                  <content src="content.html#pep-0284"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0285" playOrder="105">
+                  <navLabel>
+                        <text>pep-0285 Adding a bool type</text>
+                  </navLabel>
+                  <content src="content.html#pep-0285"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0286" playOrder="106">
+                  <navLabel>
+                        <text>pep-0286 Enhanced Argument Tuples</text>
+                  </navLabel>
+                  <content src="content.html#pep-0286"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0287" playOrder="107">
+                  <navLabel>
+                        <text>pep-0287 reStructuredText Docstring Format</text>
+                  </navLabel>
+                  <content src="content.html#pep-0287"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0288" playOrder="108">
+                  <navLabel>
+                        <text>pep-0288 Generators Attributes and Exceptions</text>
+                  </navLabel>
+                  <content src="content.html#pep-0288"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0289" playOrder="109">
+                  <navLabel>
+                        <text>pep-0289 Generator Expressions</text>
+                  </navLabel>
+                  <content src="content.html#pep-0289"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0290" playOrder="110">
+                  <navLabel>
+                        <text>pep-0290 Code Migration and Modernization</text>
+                  </navLabel>
+                  <content src="content.html#pep-0290"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0291" playOrder="111">
+                  <navLabel>
+                        <text>pep-0291 Backward Compatibility for the Python 2 Standard Library</text>
+                  </navLabel>
+                  <content src="content.html#pep-0291"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0292" playOrder="112">
+                  <navLabel>
+                        <text>pep-0292 Simpler String Substitutions</text>
+                  </navLabel>
+                  <content src="content.html#pep-0292"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0293" playOrder="113">
+                  <navLabel>
+                        <text>pep-0293 Codec Error Handling Callbacks</text>
+                  </navLabel>
+                  <content src="content.html#pep-0293"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0294" playOrder="114">
+                  <navLabel>
+                        <text>pep-0294 Type Names in the types Module</text>
+                  </navLabel>
+                  <content src="content.html#pep-0294"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0295" playOrder="115">
+                  <navLabel>
+                        <text>pep-0295 Interpretation of multiline string constants</text>
+                  </navLabel>
+                  <content src="content.html#pep-0295"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0296" playOrder="116">
+                  <navLabel>
+                        <text>pep-0296 Adding a bytes Object Type</text>
+                  </navLabel>
+                  <content src="content.html#pep-0296"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0297" playOrder="117">
+                  <navLabel>
+                        <text>pep-0297 Support for System Upgrades</text>
+                  </navLabel>
+                  <content src="content.html#pep-0297"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0298" playOrder="118">
+                  <navLabel>
+                        <text>pep-0298 The Locked Buffer Interface</text>
+                  </navLabel>
+                  <content src="content.html#pep-0298"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0299" playOrder="119">
+                  <navLabel>
+                        <text>pep-0299 Special __main__() function in modules</text>
+                  </navLabel>
+                  <content src="content.html#pep-0299"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0301" playOrder="120">
+                  <navLabel>
+                        <text>pep-0301 Package Index and Metadata for Distutils</text>
+                  </navLabel>
+                  <content src="content.html#pep-0301"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0302" playOrder="121">
+                  <navLabel>
+                        <text>pep-0302 New Import Hooks</text>
+                  </navLabel>
+                  <content src="content.html#pep-0302"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0303" playOrder="122">
+                  <navLabel>
+                        <text>pep-0303 Extend divmod() for Multiple Divisors</text>
+                  </navLabel>
+                  <content src="content.html#pep-0303"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0304" playOrder="123">
+                  <navLabel>
+                        <text>pep-0304 Controlling Generation of Bytecode Files</text>
+                  </navLabel>
+                  <content src="content.html#pep-0304"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0305" playOrder="124">
+                  <navLabel>
+                        <text>pep-0305 CSV File API</text>
+                  </navLabel>
+                  <content src="content.html#pep-0305"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0306" playOrder="125">
+                  <navLabel>
+                        <text>pep-0306 How to Change Python&#39;s Grammar</text>
+                  </navLabel>
+                  <content src="content.html#pep-0306"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0307" playOrder="126">
+                  <navLabel>
+                        <text>pep-0307 Extensions to the pickle protocol</text>
+                  </navLabel>
+                  <content src="content.html#pep-0307"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0308" playOrder="127">
+                  <navLabel>
+                        <text>pep-0308 Conditional Expressions</text>
+                  </navLabel>
+                  <content src="content.html#pep-0308"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0309" playOrder="128">
+                  <navLabel>
+                        <text>pep-0309 Partial Function Application</text>
+                  </navLabel>
+                  <content src="content.html#pep-0309"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0310" playOrder="129">
+                  <navLabel>
+                        <text>pep-0310 Reliable Acquisition/Release Pairs</text>
+                  </navLabel>
+                  <content src="content.html#pep-0310"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0311" playOrder="130">
+                  <navLabel>
+                        <text>pep-0311 Simplified Global Interpreter Lock Acquisition for Extensions</text>
+                  </navLabel>
+                  <content src="content.html#pep-0311"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0312" playOrder="131">
+                  <navLabel>
+                        <text>pep-0312 Simple Implicit Lambda</text>
+                  </navLabel>
+                  <content src="content.html#pep-0312"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0313" playOrder="132">
+                  <navLabel>
+                        <text>pep-0313 Adding Roman Numeral Literals to Python</text>
+                  </navLabel>
+                  <content src="content.html#pep-0313"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0314" playOrder="133">
+                  <navLabel>
+                        <text>pep-0314 Metadata for Python Software Packages v1.1</text>
+                  </navLabel>
+                  <content src="content.html#pep-0314"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0315" playOrder="134">
+                  <navLabel>
+                        <text>pep-0315 Enhanced While Loop</text>
+                  </navLabel>
+                  <content src="content.html#pep-0315"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0316" playOrder="135">
+                  <navLabel>
+                        <text>pep-0316 Programming by Contract for Python</text>
+                  </navLabel>
+                  <content src="content.html#pep-0316"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0317" playOrder="136">
+                  <navLabel>
+                        <text>pep-0317 Eliminate Implicit Exception Instantiation</text>
+                  </navLabel>
+                  <content src="content.html#pep-0317"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0318" playOrder="137">
+                  <navLabel>
+                        <text>pep-0318 Decorators for Functions and Methods</text>
+                  </navLabel>
+                  <content src="content.html#pep-0318"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0319" playOrder="138">
+                  <navLabel>
+                        <text>pep-0319 Python Synchronize/Asynchronize Block</text>
+                  </navLabel>
+                  <content src="content.html#pep-0319"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0320" playOrder="139">
+                  <navLabel>
+                        <text>pep-0320 Python 2.4 Release Schedule</text>
+                  </navLabel>
+                  <content src="content.html#pep-0320"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0321" playOrder="140">
+                  <navLabel>
+                        <text>pep-0321 Date/Time Parsing and Formatting</text>
+                  </navLabel>
+                  <content src="content.html#pep-0321"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0322" playOrder="141">
+                  <navLabel>
+                        <text>pep-0322 Reverse Iteration</text>
+                  </navLabel>
+                  <content src="content.html#pep-0322"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0323" playOrder="142">
+                  <navLabel>
+                        <text>pep-0323 Copyable Iterators</text>
+                  </navLabel>
+                  <content src="content.html#pep-0323"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0324" playOrder="143">
+                  <navLabel>
+                        <text>pep-0324 subprocess - New process module</text>
+                  </navLabel>
+                  <content src="content.html#pep-0324"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0325" playOrder="144">
+                  <navLabel>
+                        <text>pep-0325 Resource-Release Support for Generators</text>
+                  </navLabel>
+                  <content src="content.html#pep-0325"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0326" playOrder="145">
+                  <navLabel>
+                        <text>pep-0326 A Case for Top and Bottom Values</text>
+                  </navLabel>
+                  <content src="content.html#pep-0326"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0327" playOrder="146">
+                  <navLabel>
+                        <text>pep-0327 Decimal Data Type</text>
+                  </navLabel>
+                  <content src="content.html#pep-0327"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0328" playOrder="147">
+                  <navLabel>
+                        <text>pep-0328 Imports: Multi-Line and Absolute/Relative</text>
+                  </navLabel>
+                  <content src="content.html#pep-0328"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0329" playOrder="148">
+                  <navLabel>
+                        <text>pep-0329 Treating Builtins as Constants in the Standard Library</text>
+                  </navLabel>
+                  <content src="content.html#pep-0329"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0330" playOrder="149">
+                  <navLabel>
+                        <text>pep-0330 Python Bytecode Verification</text>
+                  </navLabel>
+                  <content src="content.html#pep-0330"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0331" playOrder="150">
+                  <navLabel>
+                        <text>pep-0331 Locale-Independent Float/String Conversions</text>
+                  </navLabel>
+                  <content src="content.html#pep-0331"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0332" playOrder="151">
+                  <navLabel>
+                        <text>pep-0332 Byte vectors and String/Unicode Unification</text>
+                  </navLabel>
+                  <content src="content.html#pep-0332"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0333" playOrder="152">
+                  <navLabel>
+                        <text>pep-0333 Python Web Server Gateway Interface v1.0</text>
+                  </navLabel>
+                  <content src="content.html#pep-0333"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0334" playOrder="153">
+                  <navLabel>
+                        <text>pep-0334 Simple Coroutines via SuspendIteration</text>
+                  </navLabel>
+                  <content src="content.html#pep-0334"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0335" playOrder="154">
+                  <navLabel>
+                        <text>pep-0335 Overloadable Boolean Operators</text>
+                  </navLabel>
+                  <content src="content.html#pep-0335"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0336" playOrder="155">
+                  <navLabel>
+                        <text>pep-0336 Make None Callable</text>
+                  </navLabel>
+                  <content src="content.html#pep-0336"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0337" playOrder="156">
+                  <navLabel>
+                        <text>pep-0337 Logging Usage in the Standard Library</text>
+                  </navLabel>
+                  <content src="content.html#pep-0337"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0338" playOrder="157">
+                  <navLabel>
+                        <text>pep-0338 Executing modules as scripts</text>
+                  </navLabel>
+                  <content src="content.html#pep-0338"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0339" playOrder="158">
+                  <navLabel>
+                        <text>pep-0339 Design of the CPython Compiler</text>
+                  </navLabel>
+                  <content src="content.html#pep-0339"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0340" playOrder="159">
+                  <navLabel>
+                        <text>pep-0340 Anonymous Block Statements</text>
+                  </navLabel>
+                  <content src="content.html#pep-0340"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0341" playOrder="160">
+                  <navLabel>
+                        <text>pep-0341 Unifying try-except and try-finally</text>
+                  </navLabel>
+                  <content src="content.html#pep-0341"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0342" playOrder="161">
+                  <navLabel>
+                        <text>pep-0342 Coroutines via Enhanced Generators</text>
+                  </navLabel>
+                  <content src="content.html#pep-0342"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0343" playOrder="162">
+                  <navLabel>
+                        <text>pep-0343 The &quot;with&quot; Statement</text>
+                  </navLabel>
+                  <content src="content.html#pep-0343"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0344" playOrder="163">
+                  <navLabel>
+                        <text>pep-0344 Exception Chaining and Embedded Tracebacks</text>
+                  </navLabel>
+                  <content src="content.html#pep-0344"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0345" playOrder="164">
+                  <navLabel>
+                        <text>pep-0345 Metadata for Python Software Packages 1.2</text>
+                  </navLabel>
+                  <content src="content.html#pep-0345"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0346" playOrder="165">
+                  <navLabel>
+                        <text>pep-0346 User Defined (&quot;with&quot;) Statements</text>
+                  </navLabel>
+                  <content src="content.html#pep-0346"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0347" playOrder="166">
+                  <navLabel>
+                        <text>pep-0347 Migrating the Python CVS to Subversion</text>
+                  </navLabel>
+                  <content src="content.html#pep-0347"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0348" playOrder="167">
+                  <navLabel>
+                        <text>pep-0348 Exception Reorganization for Python 3.0</text>
+                  </navLabel>
+                  <content src="content.html#pep-0348"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0349" playOrder="168">
+                  <navLabel>
+                        <text>pep-0349 Allow str() to return unicode strings</text>
+                  </navLabel>
+                  <content src="content.html#pep-0349"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0350" playOrder="169">
+                  <navLabel>
+                        <text>pep-0350 Codetags</text>
+                  </navLabel>
+                  <content src="content.html#pep-0350"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0351" playOrder="170">
+                  <navLabel>
+                        <text>pep-0351 The freeze protocol</text>
+                  </navLabel>
+                  <content src="content.html#pep-0351"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0352" playOrder="171">
+                  <navLabel>
+                        <text>pep-0352 Required Superclass for Exceptions</text>
+                  </navLabel>
+                  <content src="content.html#pep-0352"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0353" playOrder="172">
+                  <navLabel>
+                        <text>pep-0353 Using ssize_t as the index type</text>
+                  </navLabel>
+                  <content src="content.html#pep-0353"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0354" playOrder="173">
+                  <navLabel>
+                        <text>pep-0354 Enumerations in Python</text>
+                  </navLabel>
+                  <content src="content.html#pep-0354"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0355" playOrder="174">
+                  <navLabel>
+                        <text>pep-0355 Path - Object oriented filesystem paths</text>
+                  </navLabel>
+                  <content src="content.html#pep-0355"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0356" playOrder="175">
+                  <navLabel>
+                        <text>pep-0356 Python 2.5 Release Schedule</text>
+                  </navLabel>
+                  <content src="content.html#pep-0356"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0357" playOrder="176">
+                  <navLabel>
+                        <text>pep-0357 Allowing Any Object to be Used for Slicing</text>
+                  </navLabel>
+                  <content src="content.html#pep-0357"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0358" playOrder="177">
+                  <navLabel>
+                        <text>pep-0358 The &quot;bytes&quot; Object</text>
+                  </navLabel>
+                  <content src="content.html#pep-0358"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0359" playOrder="178">
+                  <navLabel>
+                        <text>pep-0359 The &quot;make&quot; Statement</text>
+                  </navLabel>
+                  <content src="content.html#pep-0359"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0360" playOrder="179">
+                  <navLabel>
+                        <text>pep-0360 Externally Maintained Packages</text>
+                  </navLabel>
+                  <content src="content.html#pep-0360"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0361" playOrder="180">
+                  <navLabel>
+                        <text>pep-0361 Python 2.6 and 3.0 Release Schedule</text>
+                  </navLabel>
+                  <content src="content.html#pep-0361"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0362" playOrder="181">
+                  <navLabel>
+                        <text>pep-0362 Function Signature Object</text>
+                  </navLabel>
+                  <content src="content.html#pep-0362"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0363" playOrder="182">
+                  <navLabel>
+                        <text>pep-0363 Syntax For Dynamic Attribute Access</text>
+                  </navLabel>
+                  <content src="content.html#pep-0363"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0364" playOrder="183">
+                  <navLabel>
+                        <text>pep-0364 Transitioning to the Py3K Standard Library</text>
+                  </navLabel>
+                  <content src="content.html#pep-0364"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0365" playOrder="184">
+                  <navLabel>
+                        <text>pep-0365 Adding the pkg_resources module</text>
+                  </navLabel>
+                  <content src="content.html#pep-0365"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0366" playOrder="185">
+                  <navLabel>
+                        <text>pep-0366 Main module explicit relative imports</text>
+                  </navLabel>
+                  <content src="content.html#pep-0366"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0367" playOrder="186">
+                  <navLabel>
+                        <text>pep-0367 New Super</text>
+                  </navLabel>
+                  <content src="content.html#pep-0367"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0368" playOrder="187">
+                  <navLabel>
+                        <text>pep-0368 Standard image protocol and class</text>
+                  </navLabel>
+                  <content src="content.html#pep-0368"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0369" playOrder="188">
+                  <navLabel>
+                        <text>pep-0369 Post import hooks</text>
+                  </navLabel>
+                  <content src="content.html#pep-0369"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0370" playOrder="189">
+                  <navLabel>
+                        <text>pep-0370 Per user site-packages directory</text>
+                  </navLabel>
+                  <content src="content.html#pep-0370"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0371" playOrder="190">
+                  <navLabel>
+                        <text>pep-0371 Addition of the multiprocessing package to the standard library</text>
+                  </navLabel>
+                  <content src="content.html#pep-0371"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0372" playOrder="191">
+                  <navLabel>
+                        <text>pep-0372 Adding an ordered dictionary to collections</text>
+                  </navLabel>
+                  <content src="content.html#pep-0372"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0373" playOrder="192">
+                  <navLabel>
+                        <text>pep-0373 Python 2.7 Release Schedule</text>
+                  </navLabel>
+                  <content src="content.html#pep-0373"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0374" playOrder="193">
+                  <navLabel>
+                        <text>pep-0374 Choosing a distributed VCS for the Python project</text>
+                  </navLabel>
+                  <content src="content.html#pep-0374"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0375" playOrder="194">
+                  <navLabel>
+                        <text>pep-0375 Python 3.1 Release Schedule</text>
+                  </navLabel>
+                  <content src="content.html#pep-0375"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0376" playOrder="195">
+                  <navLabel>
+                        <text>pep-0376 Database of Installed Python Distributions</text>
+                  </navLabel>
+                  <content src="content.html#pep-0376"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0377" playOrder="196">
+                  <navLabel>
+                        <text>pep-0377 Allow __enter__() methods to skip the statement body</text>
+                  </navLabel>
+                  <content src="content.html#pep-0377"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0378" playOrder="197">
+                  <navLabel>
+                        <text>pep-0378 Format Specifier for Thousands Separator</text>
+                  </navLabel>
+                  <content src="content.html#pep-0378"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0379" playOrder="198">
+                  <navLabel>
+                        <text>pep-0379 Adding an Assignment Expression</text>
+                  </navLabel>
+                  <content src="content.html#pep-0379"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0380" playOrder="199">
+                  <navLabel>
+                        <text>pep-0380 Syntax for Delegating to a Subgenerator</text>
+                  </navLabel>
+                  <content src="content.html#pep-0380"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0381" playOrder="200">
+                  <navLabel>
+                        <text>pep-0381 Mirroring infrastructure for PyPI</text>
+                  </navLabel>
+                  <content src="content.html#pep-0381"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0382" playOrder="201">
+                  <navLabel>
+                        <text>pep-0382 Namespace Packages</text>
+                  </navLabel>
+                  <content src="content.html#pep-0382"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0383" playOrder="202">
+                  <navLabel>
+                        <text>pep-0383 Non-decodable Bytes in System Character Interfaces</text>
+                  </navLabel>
+                  <content src="content.html#pep-0383"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0384" playOrder="203">
+                  <navLabel>
+                        <text>pep-0384 Defining a Stable ABI</text>
+                  </navLabel>
+                  <content src="content.html#pep-0384"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0385" playOrder="204">
+                  <navLabel>
+                        <text>pep-0385 Migrating from Subversion to Mercurial</text>
+                  </navLabel>
+                  <content src="content.html#pep-0385"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0386" playOrder="205">
+                  <navLabel>
+                        <text>pep-0386 Changing the version comparison module in Distutils</text>
+                  </navLabel>
+                  <content src="content.html#pep-0386"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0387" playOrder="206">
+                  <navLabel>
+                        <text>pep-0387 Backwards Compatibility Policy</text>
+                  </navLabel>
+                  <content src="content.html#pep-0387"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0389" playOrder="207">
+                  <navLabel>
+                        <text>pep-0389 argparse - New Command Line Parsing Module</text>
+                  </navLabel>
+                  <content src="content.html#pep-0389"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0390" playOrder="208">
+                  <navLabel>
+                        <text>pep-0390 Static metadata for Distutils</text>
+                  </navLabel>
+                  <content src="content.html#pep-0390"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0391" playOrder="209">
+                  <navLabel>
+                        <text>pep-0391 Dictionary-Based Configuration For Logging</text>
+                  </navLabel>
+                  <content src="content.html#pep-0391"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0392" playOrder="210">
+                  <navLabel>
+                        <text>pep-0392 Python 3.2 Release Schedule</text>
+                  </navLabel>
+                  <content src="content.html#pep-0392"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0393" playOrder="211">
+                  <navLabel>
+                        <text>pep-0393 Flexible String Representation</text>
+                  </navLabel>
+                  <content src="content.html#pep-0393"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0394" playOrder="212">
+                  <navLabel>
+                        <text>pep-0394 The &quot;python&quot; Command on Unix-Like Systems</text>
+                  </navLabel>
+                  <content src="content.html#pep-0394"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0395" playOrder="213">
+                  <navLabel>
+                        <text>pep-0395 Qualified Names for Modules</text>
+                  </navLabel>
+                  <content src="content.html#pep-0395"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0396" playOrder="214">
+                  <navLabel>
+                        <text>pep-0396 Module Version Numbers</text>
+                  </navLabel>
+                  <content src="content.html#pep-0396"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0397" playOrder="215">
+                  <navLabel>
+                        <text>pep-0397 Python launcher for Windows</text>
+                  </navLabel>
+                  <content src="content.html#pep-0397"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0398" playOrder="216">
+                  <navLabel>
+                        <text>pep-0398 Python 3.3 Release Schedule</text>
+                  </navLabel>
+                  <content src="content.html#pep-0398"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0399" playOrder="217">
+                  <navLabel>
+                        <text>pep-0399 Pure Python/C Accelerator Module Compatibility Requirements</text>
+                  </navLabel>
+                  <content src="content.html#pep-0399"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0400" playOrder="218">
+                  <navLabel>
+                        <text>pep-0400 Deprecate codecs.StreamReader and codecs.StreamWriter</text>
+                  </navLabel>
+                  <content src="content.html#pep-0400"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0401" playOrder="219">
+                  <navLabel>
+                        <text>pep-0401 BDFL Retirement</text>
+                  </navLabel>
+                  <content src="content.html#pep-0401"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0402" playOrder="220">
+                  <navLabel>
+                        <text>pep-0402 Simplified Package Layout and Partitioning</text>
+                  </navLabel>
+                  <content src="content.html#pep-0402"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0403" playOrder="221">
+                  <navLabel>
+                        <text>pep-0403 General purpose decorator clause (aka &quot;@in&quot; clause)</text>
+                  </navLabel>
+                  <content src="content.html#pep-0403"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0404" playOrder="222">
+                  <navLabel>
+                        <text>pep-0404 Python 2.8 Un-release Schedule</text>
+                  </navLabel>
+                  <content src="content.html#pep-0404"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0405" playOrder="223">
+                  <navLabel>
+                        <text>pep-0405 Python Virtual Environments</text>
+                  </navLabel>
+                  <content src="content.html#pep-0405"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0406" playOrder="224">
+                  <navLabel>
+                        <text>pep-0406 Improved Encapsulation of Import State</text>
+                  </navLabel>
+                  <content src="content.html#pep-0406"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0407" playOrder="225">
+                  <navLabel>
+                        <text>pep-0407 New release cycle and introducing long-term support versions</text>
+                  </navLabel>
+                  <content src="content.html#pep-0407"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0408" playOrder="226">
+                  <navLabel>
+                        <text>pep-0408 Standard library __preview__ package</text>
+                  </navLabel>
+                  <content src="content.html#pep-0408"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0409" playOrder="227">
+                  <navLabel>
+                        <text>pep-0409 Suppressing exception context</text>
+                  </navLabel>
+                  <content src="content.html#pep-0409"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0410" playOrder="228">
+                  <navLabel>
+                        <text>pep-0410 Use decimal.Decimal type for timestamps</text>
+                  </navLabel>
+                  <content src="content.html#pep-0410"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0411" playOrder="229">
+                  <navLabel>
+                        <text>pep-0411 Provisional packages in the Python standard library</text>
+                  </navLabel>
+                  <content src="content.html#pep-0411"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0412" playOrder="230">
+                  <navLabel>
+                        <text>pep-0412 Key-Sharing Dictionary</text>
+                  </navLabel>
+                  <content src="content.html#pep-0412"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0413" playOrder="231">
+                  <navLabel>
+                        <text>pep-0413 Faster evolution of the Python Standard Library</text>
+                  </navLabel>
+                  <content src="content.html#pep-0413"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0414" playOrder="232">
+                  <navLabel>
+                        <text>pep-0414 Explicit Unicode Literal for Python 3.3</text>
+                  </navLabel>
+                  <content src="content.html#pep-0414"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0415" playOrder="233">
+                  <navLabel>
+                        <text>pep-0415 Implement context suppression with exception attributes</text>
+                  </navLabel>
+                  <content src="content.html#pep-0415"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0416" playOrder="234">
+                  <navLabel>
+                        <text>pep-0416 Add a frozendict builtin type</text>
+                  </navLabel>
+                  <content src="content.html#pep-0416"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0417" playOrder="235">
+                  <navLabel>
+                        <text>pep-0417 Including mock in the Standard Library</text>
+                  </navLabel>
+                  <content src="content.html#pep-0417"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0418" playOrder="236">
+                  <navLabel>
+                        <text>pep-0418 Add monotonic time, performance counter, and process time functions</text>
+                  </navLabel>
+                  <content src="content.html#pep-0418"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0419" playOrder="237">
+                  <navLabel>
+                        <text>pep-0419 Protecting cleanup statements from interruptions</text>
+                  </navLabel>
+                  <content src="content.html#pep-0419"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0420" playOrder="238">
+                  <navLabel>
+                        <text>pep-0420 Implicit Namespace Packages</text>
+                  </navLabel>
+                  <content src="content.html#pep-0420"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0421" playOrder="239">
+                  <navLabel>
+                        <text>pep-0421 Adding sys.implementation</text>
+                  </navLabel>
+                  <content src="content.html#pep-0421"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0422" playOrder="240">
+                  <navLabel>
+                        <text>pep-0422 Simpler customisation of class creation</text>
+                  </navLabel>
+                  <content src="content.html#pep-0422"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0423" playOrder="241">
+                  <navLabel>
+                        <text>pep-0423 Naming conventions and recipes related to packaging</text>
+                  </navLabel>
+                  <content src="content.html#pep-0423"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0424" playOrder="242">
+                  <navLabel>
+                        <text>pep-0424 A method for exposing a length hint</text>
+                  </navLabel>
+                  <content src="content.html#pep-0424"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0425" playOrder="243">
+                  <navLabel>
+                        <text>pep-0425 Compatibility Tags for Built Distributions</text>
+                  </navLabel>
+                  <content src="content.html#pep-0425"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0426" playOrder="244">
+                  <navLabel>
+                        <text>pep-0426 Metadata for Python Software Packages 2.0</text>
+                  </navLabel>
+                  <content src="content.html#pep-0426"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0427" playOrder="245">
+                  <navLabel>
+                        <text>pep-0427 The Wheel Binary Package Format 1.0</text>
+                  </navLabel>
+                  <content src="content.html#pep-0427"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0428" playOrder="246">
+                  <navLabel>
+                        <text>pep-0428 The pathlib module -- object-oriented filesystem paths</text>
+                  </navLabel>
+                  <content src="content.html#pep-0428"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0429" playOrder="247">
+                  <navLabel>
+                        <text>pep-0429 Python 3.4 Release Schedule</text>
+                  </navLabel>
+                  <content src="content.html#pep-0429"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0430" playOrder="248">
+                  <navLabel>
+                        <text>pep-0430 Migrating to Python 3 as the default online documentation</text>
+                  </navLabel>
+                  <content src="content.html#pep-0430"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0431" playOrder="249">
+                  <navLabel>
+                        <text>pep-0431 Time zone support improvements</text>
+                  </navLabel>
+                  <content src="content.html#pep-0431"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0432" playOrder="250">
+                  <navLabel>
+                        <text>pep-0432 Simplifying the CPython startup sequence</text>
+                  </navLabel>
+                  <content src="content.html#pep-0432"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0433" playOrder="251">
+                  <navLabel>
+                        <text>pep-0433 Easier suppression of file descriptor inheritance</text>
+                  </navLabel>
+                  <content src="content.html#pep-0433"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0434" playOrder="252">
+                  <navLabel>
+                        <text>pep-0434 IDLE Enhancement Exception for All Branches</text>
+                  </navLabel>
+                  <content src="content.html#pep-0434"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0435" playOrder="253">
+                  <navLabel>
+                        <text>pep-0435 Adding an Enum type to the Python standard library</text>
+                  </navLabel>
+                  <content src="content.html#pep-0435"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0436" playOrder="254">
+                  <navLabel>
+                        <text>pep-0436 The Argument Clinic DSL</text>
+                  </navLabel>
+                  <content src="content.html#pep-0436"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0437" playOrder="255">
+                  <navLabel>
+                        <text>pep-0437 A DSL for specifying signatures, annotations and argument converters</text>
+                  </navLabel>
+                  <content src="content.html#pep-0437"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0438" playOrder="256">
+                  <navLabel>
+                        <text>pep-0438 Transitioning to release-file hosting on PyPI</text>
+                  </navLabel>
+                  <content src="content.html#pep-0438"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0439" playOrder="257">
+                  <navLabel>
+                        <text>pep-0439 Inclusion of implicit pip bootstrap in Python installation</text>
+                  </navLabel>
+                  <content src="content.html#pep-0439"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0440" playOrder="258">
+                  <navLabel>
+                        <text>pep-0440 Version Identification and Dependency Specification</text>
+                  </navLabel>
+                  <content src="content.html#pep-0440"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0441" playOrder="259">
+                  <navLabel>
+                        <text>pep-0441 Improving Python ZIP Application Support</text>
+                  </navLabel>
+                  <content src="content.html#pep-0441"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0442" playOrder="260">
+                  <navLabel>
+                        <text>pep-0442 Safe object finalization</text>
+                  </navLabel>
+                  <content src="content.html#pep-0442"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0443" playOrder="261">
+                  <navLabel>
+                        <text>pep-0443 Single-dispatch generic functions</text>
+                  </navLabel>
+                  <content src="content.html#pep-0443"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0444" playOrder="262">
+                  <navLabel>
+                        <text>pep-0444 Python Web3 Interface</text>
+                  </navLabel>
+                  <content src="content.html#pep-0444"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0445" playOrder="263">
+                  <navLabel>
+                        <text>pep-0445 Add new APIs to customize Python memory allocators</text>
+                  </navLabel>
+                  <content src="content.html#pep-0445"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0446" playOrder="264">
+                  <navLabel>
+                        <text>pep-0446 Make newly created file descriptors non-inheritable</text>
+                  </navLabel>
+                  <content src="content.html#pep-0446"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0447" playOrder="265">
+                  <navLabel>
+                        <text>pep-0447 Add __getdescriptor__ method to metaclass</text>
+                  </navLabel>
+                  <content src="content.html#pep-0447"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0448" playOrder="266">
+                  <navLabel>
+                        <text>pep-0448 Additional Unpacking Generalizations</text>
+                  </navLabel>
+                  <content src="content.html#pep-0448"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0449" playOrder="267">
+                  <navLabel>
+                        <text>pep-0449 Removal of the PyPI Mirror Auto Discovery and Naming Scheme</text>
+                  </navLabel>
+                  <content src="content.html#pep-0449"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0450" playOrder="268">
+                  <navLabel>
+                        <text>pep-0450 Adding A Statistics Module To The Standard Library</text>
+                  </navLabel>
+                  <content src="content.html#pep-0450"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0451" playOrder="269">
+                  <navLabel>
+                        <text>pep-0451 A ModuleSpec Type for the Import System</text>
+                  </navLabel>
+                  <content src="content.html#pep-0451"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0452" playOrder="270">
+                  <navLabel>
+                        <text>pep-0452 API for Cryptographic Hash Functions v2.0</text>
+                  </navLabel>
+                  <content src="content.html#pep-0452"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0453" playOrder="271">
+                  <navLabel>
+                        <text>pep-0453 Explicit bootstrapping of pip in Python installations</text>
+                  </navLabel>
+                  <content src="content.html#pep-0453"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0454" playOrder="272">
+                  <navLabel>
+                        <text>pep-0454 Add a new tracemalloc module to trace Python memory allocations</text>
+                  </navLabel>
+                  <content src="content.html#pep-0454"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0455" playOrder="273">
+                  <navLabel>
+                        <text>pep-0455 Adding a key-transforming dictionary to collections</text>
+                  </navLabel>
+                  <content src="content.html#pep-0455"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0456" playOrder="274">
+                  <navLabel>
+                        <text>pep-0456 Secure and interchangeable hash algorithm</text>
+                  </navLabel>
+                  <content src="content.html#pep-0456"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0457" playOrder="275">
+                  <navLabel>
+                        <text>pep-0457 Syntax For Positional-Only Parameters</text>
+                  </navLabel>
+                  <content src="content.html#pep-0457"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0458" playOrder="276">
+                  <navLabel>
+                        <text>pep-0458 Surviving a Compromise of PyPI</text>
+                  </navLabel>
+                  <content src="content.html#pep-0458"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0459" playOrder="277">
+                  <navLabel>
+                        <text>pep-0459 Standard Metadata Extensions for Python Software Packages</text>
+                  </navLabel>
+                  <content src="content.html#pep-0459"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0460" playOrder="278">
+                  <navLabel>
+                        <text>pep-0460 Add binary interpolation and formatting</text>
+                  </navLabel>
+                  <content src="content.html#pep-0460"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0461" playOrder="279">
+                  <navLabel>
+                        <text>pep-0461 Adding % formatting to bytes and bytearray</text>
+                  </navLabel>
+                  <content src="content.html#pep-0461"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0462" playOrder="280">
+                  <navLabel>
+                        <text>pep-0462 Core development workflow automation for CPython</text>
+                  </navLabel>
+                  <content src="content.html#pep-0462"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0463" playOrder="281">
+                  <navLabel>
+                        <text>pep-0463 Exception-catching expressions</text>
+                  </navLabel>
+                  <content src="content.html#pep-0463"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0464" playOrder="282">
+                  <navLabel>
+                        <text>pep-0464 Removal of the PyPI Mirror Authenticity API</text>
+                  </navLabel>
+                  <content src="content.html#pep-0464"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0465" playOrder="283">
+                  <navLabel>
+                        <text>pep-0465 A dedicated infix operator for matrix multiplication</text>
+                  </navLabel>
+                  <content src="content.html#pep-0465"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0466" playOrder="284">
+                  <navLabel>
+                        <text>pep-0466 Network Security Enhancements for Python 2.7.x</text>
+                  </navLabel>
+                  <content src="content.html#pep-0466"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0467" playOrder="285">
+                  <navLabel>
+                        <text>pep-0467 Minor API improvements for binary sequences</text>
+                  </navLabel>
+                  <content src="content.html#pep-0467"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0468" playOrder="286">
+                  <navLabel>
+                        <text>pep-0468 Preserving the order of **kwargs in a function.</text>
+                  </navLabel>
+                  <content src="content.html#pep-0468"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0469" playOrder="287">
+                  <navLabel>
+                        <text>pep-0469 Migration of dict iteration code to Python 3</text>
+                  </navLabel>
+                  <content src="content.html#pep-0469"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0470" playOrder="288">
+                  <navLabel>
+                        <text>pep-0470 Using Multi Repository Support for External to PyPI Package File Hosting</text>
+                  </navLabel>
+                  <content src="content.html#pep-0470"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0471" playOrder="289">
+                  <navLabel>
+                        <text>pep-0471 os.scandir() function -- a better and faster directory iterator</text>
+                  </navLabel>
+                  <content src="content.html#pep-0471"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0472" playOrder="290">
+                  <navLabel>
+                        <text>pep-0472 Support for indexing with keyword arguments</text>
+                  </navLabel>
+                  <content src="content.html#pep-0472"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0473" playOrder="291">
+                  <navLabel>
+                        <text>pep-0473 Adding structured data to built-in exceptions</text>
+                  </navLabel>
+                  <content src="content.html#pep-0473"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0474" playOrder="292">
+                  <navLabel>
+                        <text>pep-0474 Creating forge.python.org</text>
+                  </navLabel>
+                  <content src="content.html#pep-0474"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0475" playOrder="293">
+                  <navLabel>
+                        <text>pep-0475 Retry system calls failing with EINTR</text>
+                  </navLabel>
+                  <content src="content.html#pep-0475"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0476" playOrder="294">
+                  <navLabel>
+                        <text>pep-0476 Enabling certificate verification by default for stdlib http clients</text>
+                  </navLabel>
+                  <content src="content.html#pep-0476"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0477" playOrder="295">
+                  <navLabel>
+                        <text>pep-0477 Backport ensurepip (PEP 453) to Python 2.7</text>
+                  </navLabel>
+                  <content src="content.html#pep-0477"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0478" playOrder="296">
+                  <navLabel>
+                        <text>pep-0478 Python 3.5 Release Schedule</text>
+                  </navLabel>
+                  <content src="content.html#pep-0478"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0479" playOrder="297">
+                  <navLabel>
+                        <text>pep-0479 Change StopIteration handling inside generators</text>
+                  </navLabel>
+                  <content src="content.html#pep-0479"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0480" playOrder="298">
+                  <navLabel>
+                        <text>pep-0480 Surviving a Compromise of PyPI: The Maximum Security Model</text>
+                  </navLabel>
+                  <content src="content.html#pep-0480"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0481" playOrder="299">
+                  <navLabel>
+                        <text>pep-0481 Migrate CPython to Git, Github, and Phabricator</text>
+                  </navLabel>
+                  <content src="content.html#pep-0481"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0482" playOrder="300">
+                  <navLabel>
+                        <text>pep-0482 Literature Overview for Type Hints</text>
+                  </navLabel>
+                  <content src="content.html#pep-0482"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0483" playOrder="301">
+                  <navLabel>
+                        <text>pep-0483 The Theory of Type Hints</text>
+                  </navLabel>
+                  <content src="content.html#pep-0483"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0484" playOrder="302">
+                  <navLabel>
+                        <text>pep-0484 Type Hints</text>
+                  </navLabel>
+                  <content src="content.html#pep-0484"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0485" playOrder="303">
+                  <navLabel>
+                        <text>pep-0485 A Function for testing approximate equality</text>
+                  </navLabel>
+                  <content src="content.html#pep-0485"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0486" playOrder="304">
+                  <navLabel>
+                        <text>pep-0486 Make the Python Launcher aware of virtual environments</text>
+                  </navLabel>
+                  <content src="content.html#pep-0486"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0487" playOrder="305">
+                  <navLabel>
+                        <text>pep-0487 Simpler customisation of class creation</text>
+                  </navLabel>
+                  <content src="content.html#pep-0487"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0488" playOrder="306">
+                  <navLabel>
+                        <text>pep-0488 Elimination of PYO files</text>
+                  </navLabel>
+                  <content src="content.html#pep-0488"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0489" playOrder="307">
+                  <navLabel>
+                        <text>pep-0489 Multi-phase extension module initialization</text>
+                  </navLabel>
+                  <content src="content.html#pep-0489"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0490" playOrder="308">
+                  <navLabel>
+                        <text>pep-0490 Chain exceptions at C level</text>
+                  </navLabel>
+                  <content src="content.html#pep-0490"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0491" playOrder="309">
+                  <navLabel>
+                        <text>pep-0491 The Wheel Binary Package Format 1.9</text>
+                  </navLabel>
+                  <content src="content.html#pep-0491"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0492" playOrder="310">
+                  <navLabel>
+                        <text>pep-0492 Coroutines with async and await syntax</text>
+                  </navLabel>
+                  <content src="content.html#pep-0492"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0493" playOrder="311">
+                  <navLabel>
+                        <text>pep-0493 HTTPS verification recommendations for Python 2.7 redistributors</text>
+                  </navLabel>
+                  <content src="content.html#pep-0493"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0494" playOrder="312">
+                  <navLabel>
+                        <text>pep-0494 Python 3.6 Release Schedule</text>
+                  </navLabel>
+                  <content src="content.html#pep-0494"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0628" playOrder="313">
+                  <navLabel>
+                        <text>pep-0628 Add math.tau</text>
+                  </navLabel>
+                  <content src="content.html#pep-0628"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0666" playOrder="314">
+                  <navLabel>
+                        <text>pep-0666 Reject Foolish Indentation</text>
+                  </navLabel>
+                  <content src="content.html#pep-0666"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-0754" playOrder="315">
+                  <navLabel>
+                        <text>pep-0754 IEEE 754 Floating Point Special Values</text>
+                  </navLabel>
+                  <content src="content.html#pep-0754"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-3000" playOrder="316">
+                  <navLabel>
+                        <text>pep-3000 Python 3000</text>
+                  </navLabel>
+                  <content src="content.html#pep-3000"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-3001" playOrder="317">
+                  <navLabel>
+                        <text>pep-3001 Procedure for reviewing and improving standard library modules</text>
+                  </navLabel>
+                  <content src="content.html#pep-3001"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-3002" playOrder="318">
+                  <navLabel>
+                        <text>pep-3002 Procedure for Backwards-Incompatible Changes</text>
+                  </navLabel>
+                  <content src="content.html#pep-3002"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-3003" playOrder="319">
+                  <navLabel>
+                        <text>pep-3003 Python Language Moratorium</text>
+                  </navLabel>
+                  <content src="content.html#pep-3003"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-3099" playOrder="320">
+                  <navLabel>
+                        <text>pep-3099 Things that will Not Change in Python 3000</text>
+                  </navLabel>
+                  <content src="content.html#pep-3099"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-3100" playOrder="321">
+                  <navLabel>
+                        <text>pep-3100 Miscellaneous Python 3.0 Plans</text>
+                  </navLabel>
+                  <content src="content.html#pep-3100"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-3101" playOrder="322">
+                  <navLabel>
+                        <text>pep-3101 Advanced String Formatting</text>
+                  </navLabel>
+                  <content src="content.html#pep-3101"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-3102" playOrder="323">
+                  <navLabel>
+                        <text>pep-3102 Keyword-Only Arguments</text>
+                  </navLabel>
+                  <content src="content.html#pep-3102"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-3103" playOrder="324">
+                  <navLabel>
+                        <text>pep-3103 A Switch/Case Statement</text>
+                  </navLabel>
+                  <content src="content.html#pep-3103"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-3104" playOrder="325">
+                  <navLabel>
+                        <text>pep-3104 Access to Names in Outer Scopes</text>
+                  </navLabel>
+                  <content src="content.html#pep-3104"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-3105" playOrder="326">
+                  <navLabel>
+                        <text>pep-3105 Make print a function</text>
+                  </navLabel>
+                  <content src="content.html#pep-3105"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-3106" playOrder="327">
+                  <navLabel>
+                        <text>pep-3106 Revamping dict.keys(), .values() and .items()</text>
+                  </navLabel>
+                  <content src="content.html#pep-3106"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-3107" playOrder="328">
+                  <navLabel>
+                        <text>pep-3107 Function Annotations</text>
+                  </navLabel>
+                  <content src="content.html#pep-3107"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-3108" playOrder="329">
+                  <navLabel>
+                        <text>pep-3108 Standard Library Reorganization</text>
+                  </navLabel>
+                  <content src="content.html#pep-3108"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-3109" playOrder="330">
+                  <navLabel>
+                        <text>pep-3109 Raising Exceptions in Python 3000</text>
+                  </navLabel>
+                  <content src="content.html#pep-3109"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-3110" playOrder="331">
+                  <navLabel>
+                        <text>pep-3110 Catching Exceptions in Python 3000</text>
+                  </navLabel>
+                  <content src="content.html#pep-3110"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-3111" playOrder="332">
+                  <navLabel>
+                        <text>pep-3111 Simple input built-in in Python 3000</text>
+                  </navLabel>
+                  <content src="content.html#pep-3111"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-3112" playOrder="333">
+                  <navLabel>
+                        <text>pep-3112 Bytes literals in Python 3000</text>
+                  </navLabel>
+                  <content src="content.html#pep-3112"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-3113" playOrder="334">
+                  <navLabel>
+                        <text>pep-3113 Removal of Tuple Parameter Unpacking</text>
+                  </navLabel>
+                  <content src="content.html#pep-3113"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-3114" playOrder="335">
+                  <navLabel>
+                        <text>pep-3114 Renaming iterator.next() to iterator.__next__()</text>
+                  </navLabel>
+                  <content src="content.html#pep-3114"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-3115" playOrder="336">
+                  <navLabel>
+                        <text>pep-3115 Metaclasses in Python 3000</text>
+                  </navLabel>
+                  <content src="content.html#pep-3115"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-3116" playOrder="337">
+                  <navLabel>
+                        <text>pep-3116 New I/O</text>
+                  </navLabel>
+                  <content src="content.html#pep-3116"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-3117" playOrder="338">
+                  <navLabel>
+                        <text>pep-3117 Postfix type declarations</text>
+                  </navLabel>
+                  <content src="content.html#pep-3117"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-3118" playOrder="339">
+                  <navLabel>
+                        <text>pep-3118 Revising the buffer protocol</text>
+                  </navLabel>
+                  <content src="content.html#pep-3118"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-3119" playOrder="340">
+                  <navLabel>
+                        <text>pep-3119 Introducing Abstract Base Classes</text>
+                  </navLabel>
+                  <content src="content.html#pep-3119"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-3120" playOrder="341">
+                  <navLabel>
+                        <text>pep-3120 Using UTF-8 as the default source encoding</text>
+                  </navLabel>
+                  <content src="content.html#pep-3120"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-3121" playOrder="342">
+                  <navLabel>
+                        <text>pep-3121 Extension Module Initialization and Finalization</text>
+                  </navLabel>
+                  <content src="content.html#pep-3121"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-3122" playOrder="343">
+                  <navLabel>
+                        <text>pep-3122 Delineation of the main module</text>
+                  </navLabel>
+                  <content src="content.html#pep-3122"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-3123" playOrder="344">
+                  <navLabel>
+                        <text>pep-3123 Making PyObject_HEAD conform to standard C</text>
+                  </navLabel>
+                  <content src="content.html#pep-3123"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-3124" playOrder="345">
+                  <navLabel>
+                        <text>pep-3124 Overloading, Generic Functions, Interfaces, and Adaptation</text>
+                  </navLabel>
+                  <content src="content.html#pep-3124"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-3125" playOrder="346">
+                  <navLabel>
+                        <text>pep-3125 Remove Backslash Continuation</text>
+                  </navLabel>
+                  <content src="content.html#pep-3125"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-3126" playOrder="347">
+                  <navLabel>
+                        <text>pep-3126 Remove Implicit String Concatenation</text>
+                  </navLabel>
+                  <content src="content.html#pep-3126"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-3127" playOrder="348">
+                  <navLabel>
+                        <text>pep-3127 Integer Literal Support and Syntax</text>
+                  </navLabel>
+                  <content src="content.html#pep-3127"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-3128" playOrder="349">
+                  <navLabel>
+                        <text>pep-3128 BList: A Faster List-like Type</text>
+                  </navLabel>
+                  <content src="content.html#pep-3128"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-3129" playOrder="350">
+                  <navLabel>
+                        <text>pep-3129 Class Decorators</text>
+                  </navLabel>
+                  <content src="content.html#pep-3129"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-3130" playOrder="351">
+                  <navLabel>
+                        <text>pep-3130 Access to Current Module/Class/Function</text>
+                  </navLabel>
+                  <content src="content.html#pep-3130"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-3131" playOrder="352">
+                  <navLabel>
+                        <text>pep-3131 Supporting Non-ASCII Identifiers</text>
+                  </navLabel>
+                  <content src="content.html#pep-3131"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-3132" playOrder="353">
+                  <navLabel>
+                        <text>pep-3132 Extended Iterable Unpacking</text>
+                  </navLabel>
+                  <content src="content.html#pep-3132"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-3133" playOrder="354">
+                  <navLabel>
+                        <text>pep-3133 Introducing Roles</text>
+                  </navLabel>
+                  <content src="content.html#pep-3133"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-3134" playOrder="355">
+                  <navLabel>
+                        <text>pep-3134 Exception Chaining and Embedded Tracebacks</text>
+                  </navLabel>
+                  <content src="content.html#pep-3134"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-3135" playOrder="356">
+                  <navLabel>
+                        <text>pep-3135 New Super</text>
+                  </navLabel>
+                  <content src="content.html#pep-3135"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-3136" playOrder="357">
+                  <navLabel>
+                        <text>pep-3136 Labeled break and continue</text>
+                  </navLabel>
+                  <content src="content.html#pep-3136"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-3137" playOrder="358">
+                  <navLabel>
+                        <text>pep-3137 Immutable Bytes and Mutable Buffer</text>
+                  </navLabel>
+                  <content src="content.html#pep-3137"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-3138" playOrder="359">
+                  <navLabel>
+                        <text>pep-3138 String representation in Python 3000</text>
+                  </navLabel>
+                  <content src="content.html#pep-3138"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-3139" playOrder="360">
+                  <navLabel>
+                        <text>pep-3139 Cleaning out sys and the &quot;interpreter&quot; module</text>
+                  </navLabel>
+                  <content src="content.html#pep-3139"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-3140" playOrder="361">
+                  <navLabel>
+                        <text>pep-3140 str(container) should call str(item), not repr(item)</text>
+                  </navLabel>
+                  <content src="content.html#pep-3140"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-3141" playOrder="362">
+                  <navLabel>
+                        <text>pep-3141 A Type Hierarchy for Numbers</text>
+                  </navLabel>
+                  <content src="content.html#pep-3141"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-3142" playOrder="363">
+                  <navLabel>
+                        <text>pep-3142 Add a &quot;while&quot; clause to generator expressions</text>
+                  </navLabel>
+                  <content src="content.html#pep-3142"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-3143" playOrder="364">
+                  <navLabel>
+                        <text>pep-3143 Standard daemon process library</text>
+                  </navLabel>
+                  <content src="content.html#pep-3143"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-3144" playOrder="365">
+                  <navLabel>
+                        <text>pep-3144 IP Address Manipulation Library for the Python Standard Library</text>
+                  </navLabel>
+                  <content src="content.html#pep-3144"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-3145" playOrder="366">
+                  <navLabel>
+                        <text>pep-3145 Asynchronous I/O For subprocess.Popen</text>
+                  </navLabel>
+                  <content src="content.html#pep-3145"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-3146" playOrder="367">
+                  <navLabel>
+                        <text>pep-3146 Merging Unladen Swallow into CPython</text>
+                  </navLabel>
+                  <content src="content.html#pep-3146"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-3147" playOrder="368">
+                  <navLabel>
+                        <text>pep-3147 PYC Repository Directories</text>
+                  </navLabel>
+                  <content src="content.html#pep-3147"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-3148" playOrder="369">
+                  <navLabel>
+                        <text>pep-3148 futures - execute computations asynchronously</text>
+                  </navLabel>
+                  <content src="content.html#pep-3148"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-3149" playOrder="370">
+                  <navLabel>
+                        <text>pep-3149 ABI version tagged .so files</text>
+                  </navLabel>
+                  <content src="content.html#pep-3149"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-3150" playOrder="371">
+                  <navLabel>
+                        <text>pep-3150 Statement local namespaces (aka &quot;given&quot; clause)</text>
+                  </navLabel>
+                  <content src="content.html#pep-3150"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-3151" playOrder="372">
+                  <navLabel>
+                        <text>pep-3151 Reworking the OS and IO exception hierarchy</text>
+                  </navLabel>
+                  <content src="content.html#pep-3151"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-3152" playOrder="373">
+                  <navLabel>
+                        <text>pep-3152 Cofunctions</text>
+                  </navLabel>
+                  <content src="content.html#pep-3152"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-3153" playOrder="374">
+                  <navLabel>
+                        <text>pep-3153 Asynchronous IO support</text>
+                  </navLabel>
+                  <content src="content.html#pep-3153"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-3154" playOrder="375">
+                  <navLabel>
+                        <text>pep-3154 Pickle protocol version 4</text>
+                  </navLabel>
+                  <content src="content.html#pep-3154"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-3155" playOrder="376">
+                  <navLabel>
+                        <text>pep-3155 Qualified name for classes and functions</text>
+                  </navLabel>
+                  <content src="content.html#pep-3155"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-3156" playOrder="377">
+                  <navLabel>
+                        <text>pep-3156 Asynchronous IO Support Rebooted: the &quot;asyncio&quot; Module</text>
+                  </navLabel>
+                  <content src="content.html#pep-3156"/>
+                </navPoint>
+                
+                <navPoint class="chapter" id="chapter-pep-3333" playOrder="378">
+                  <navLabel>
+                        <text>pep-3333 Python Web Server Gateway Interface v1.0.1</text>
+                  </navLabel>
+                  <content src="content.html#pep-3333"/>
+                </navPoint>
+                
+        </navMap>
+</ncx>

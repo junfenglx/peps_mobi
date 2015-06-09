@@ -1,0 +1,18 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css.css" rel="stylesheet" type="text/css" />
+<title>Table of Contents</title>
+</head>
+<body>
+<h1 style="page-break-before:avoid">目录</h1>
+<hr width="80%" />
+<p>得得爱的的</p>
+<p style="text-indent:0">
+{% for t in titles %}
+<a href="content.html#{{ t["id"] }}">{{ t["text"] }}</a><br/>
+{% end %}
+</p>
+</body>
+</html>
